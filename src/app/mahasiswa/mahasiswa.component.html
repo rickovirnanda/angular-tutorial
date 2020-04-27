@@ -1,0 +1,32 @@
+<div class="container mt-4">
+    <div class="d-flex">
+        <h2>Mahasiswa</h2>
+        <button type="button" class="btn btn-primary ml-auto">Tambah</button>
+    </div>
+
+    <div class="table-responsive mt-3">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">NIM</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Jurusan</th>
+                    <th scope="col" width="20%" class="text-center">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listMahasiswa; let i = index">
+                    <td>{{ i+1 }}</td>
+                    <td>{{ item.NIM }}</td>
+                    <td>{{ item.nama }}</td>
+                    <td>{{ item.jurusan }}</td>
+                    <td class="text-center">
+                        <button type="button" class="btn btn-secondary mr-2">Edit</button>
+                        <button type="button" class="btn btn-danger">Hapus</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

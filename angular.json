@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +127,6 @@
   },
   "defaultProject": "angular-tutorial",
   "cli": {
-    "analytics": "fa703c59-0da4-4ee8-84aa-028d7f90727f"
+    "analytics": "3284b980-ef50-4464-83c1-129e00995492"
   }
 }
