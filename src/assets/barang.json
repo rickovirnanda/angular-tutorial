@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Sepatu Kets",
+        "cratedDate":"12-02-2020",
+        "stock":5,
+        "description":"ksdhfkasduf",
+        "price":200000,
+        "imgUrl":"https://cdn.elevenia.co.id/ex_t/R/200x200/1/85/1/src/g/7/5/0/0/7/2/19750072_B.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Sendal Karvil",
+        "cratedDate":"12-04-2020",
+        "stock":5,
+        "description":"ksdhfkasduf",
+        "price":1220000,
+        "imgUrl":"https://cf.shopee.co.id/file/65dd95a91d7c35a5dfc90f0c7ec57ffe"
+    },
+    {
+        "id": 3,
+        "name": "Sepatu futsal",
+        "cratedDate":"12-02-2020",
+        "stock":5,
+        "description":"ksdhfkasduf",
+        "price":200000,
+        "imgUrl":"https://apollo-singapore.akamaized.net/v1/files/1i2bze32wui93-ID/image;s=850x0"
+    }
+]

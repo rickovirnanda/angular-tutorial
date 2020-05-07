@@ -8,6 +8,7 @@ import { Mahasiswa } from '../mahasiswa.model';
 })
 export class MahasiswaComponent implements OnInit {
   listMahasiswa:Mahasiswa[] = [];
+  selectedMahasiswa:Mahasiswa = null;
 
   constructor() { }
 
@@ -32,6 +33,16 @@ export class MahasiswaComponent implements OnInit {
         return item;
     });
     this.listMahasiswa = tempMhs;
+  }
+
+  edit(data:Mahasiswa)
+  {
+    this.selectedMahasiswa = data;
+  }
+
+  onChange()
+  {
+    this.selectedMahasiswa = null;
   }
 
 }

@@ -1,0 +1,27 @@
+<div class="table-responsive mt-4">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nama Barang</th>
+                <th scope="col">Harga</th>
+                <th scope="col">Stok</th>
+                <th scope="col">Gambar</th>
+                <th scope="col" class="text-center">Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of barang; let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{ item.name }}</td>
+                <td>{{ item.price | currency:'IDR':'Rp. ':'.0' }}</td>
+                <td>{{ item.stock }}</td>
+                <td><img [src]="item.imgUrl" class="img-barang"></td>
+                <td class="text-center">
+                    <button type="button" class="btn btn-warning btn-sm mr-1">Edit</button>
+                    <button type="button" class="btn btn-danger btn-sm">Hapus</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

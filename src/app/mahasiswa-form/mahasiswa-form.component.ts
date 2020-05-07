@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Mahasiswa } from '../mahasiswa.model';
 
 @Component({
   selector: 'app-mahasiswa-form',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mahasiswa-form.component.css']
 })
 export class MahasiswaFormComponent implements OnInit {
+  @Input() mahasiswa:Mahasiswa;
+  @Output() change = new EventEmitter<Mahasiswa>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  submit()
+  {
+    this.change.emit(null);
   }
 
 }

@@ -1,7 +1,6 @@
 <div class="container mt-4">
     <div class="d-flex">
         <h2>Mahasiswa</h2>
-        <button type="button" class="btn btn-primary ml-auto">Tambah</button>
     </div>
 
     <div class="table-responsive mt-3">
@@ -22,11 +21,17 @@
                     <td>{{ item.nama }}</td>
                     <td>{{ item.jurusan }}</td>
                     <td class="text-center">
-                        <button type="button" class="btn btn-secondary mr-2">Edit</button>
-                        <button type="button" class="btn btn-danger">Hapus</button>
+                        <button type="button" class="btn btn-secondary mr-2" (click)="edit(item)">Edit</button>
+                        <button type="button" class="btn btn-danger" (click)="remove(item.id)">Hapus</button>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
+
+    <app-mahasiswa-form 
+        [mahasiswa]="selectedMahasiswa" 
+        *ngIf="selectedMahasiswa" 
+        (change)="onChange()">
+    </app-mahasiswa-form>
 </div>
